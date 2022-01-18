@@ -1,0 +1,15 @@
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.csproj.AssemblyReference.cache
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.AssemblyInfoInputs.cache
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.AssemblyInfo.cs
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.csproj.CoreCompileInputs.cache
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\bin\Debug\net6.0\IntroException.exe
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\bin\Debug\net6.0\IntroException.deps.json
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\bin\Debug\net6.0\IntroException.runtimeconfig.json
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\bin\Debug\net6.0\IntroException.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\bin\Debug\net6.0\ref\IntroException.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\bin\Debug\net6.0\IntroException.pdb
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\ref\IntroException.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.pdb
+C:\Users\arthu\Documents\GitHub\C-Sharp\IntroException\obj\Debug\net6.0\IntroException.genruntimeconfig.cache
