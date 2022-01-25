@@ -1,0 +1,15 @@
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.csproj.AssemblyReference.cache
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.AssemblyInfoInputs.cache
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.AssemblyInfo.cs
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.csproj.CoreCompileInputs.cache
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\bin\Debug\net6.0\Pokemon.exe
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\bin\Debug\net6.0\Pokemon.deps.json
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\bin\Debug\net6.0\Pokemon.runtimeconfig.json
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\bin\Debug\net6.0\Pokemon.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\bin\Debug\net6.0\ref\Pokemon.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\bin\Debug\net6.0\Pokemon.pdb
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\ref\Pokemon.dll
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.pdb
+C:\Users\arthu\Documents\GitHub\C-Sharp\Pokemon\obj\Debug\net6.0\Pokemon.genruntimeconfig.cache
