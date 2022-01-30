@@ -1,5 +1,4 @@
 ﻿using Pokemons.Models;
-using Pokemons.Models.Pokemons;
 using Pokemons.Enums;
 using System.Reflection;
 
