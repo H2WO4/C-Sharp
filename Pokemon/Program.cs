@@ -1,4 +1,5 @@
 ﻿using Pokemons.Models;
+using Pokemons.Models.Pokemons;
 using Pokemons.Enums;
 using System.Reflection;
 
@@ -9,14 +10,13 @@ namespace Pokemons
 		static void Main(String[] args)
 		{
 			Random random = new Random();
-			Assembly.GetAssembly(typeof(Pokemon)).GetTypes()
+			Assembly.GetAssembly(typeof(Pokemon))!.GetTypes()
 				.Where(type => type.IsClass && !type.IsAbstract && type.IsSubclassOf(typeof(Pokemon)))
-				.Select(type => (Pokemon)Activator.CreateInstance(type, new object[]{ random.Next(1, 100) })).ToList()
-				.Where(poke => poke.Species.Class == PokeClass.Baby)
+				.Select(type => (Pokemon?)Activator.CreateInstance(type, new object[]{ random.Next(1, 100) })!).ToList()
+				.Where(poke => poke.Species.Class == PokeClass.Mythical)
 				.OrderBy(_ => random.Next())
-				.Take(10).ToList()
+				.ToList()
 				.ForEach(poke => Console.WriteLine($"{poke.PokedexEntry}\n"));
-			
 		}
 	}
 }
