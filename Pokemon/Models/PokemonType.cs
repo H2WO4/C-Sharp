@@ -3,25 +3,39 @@ using Pokemons.Interfaces;
 
 namespace Pokemons.Models
 {
-	public class PokemonType : I_PokemonType
+	public abstract class PokemonType : I_PokemonType
 	{
 		# region Class Variables
-		protected static string _name = "";
-		protected static (int, int, int) _color = (0, 0, 0);
-		protected static PokemonType _singleton = new PokemonType();
+		protected string _name = "";
+		protected (int, int, int) _color = (0, 0, 0);
+
 		public static Dictionary<PokemonType, Dictionary<PokemonType, double>> _weaknesses = new Dictionary<PokemonType, Dictionary<PokemonType, double>>();
 		# endregion
 
 		# region Properties
 		public string Name { get => _name; }
 		public (int, int, int) Color { get => _color; }
-		public static PokemonType Singleton { get => _singleton; }
 		# endregion
 
 		# region Constructor
-		public PokemonType() {}
-		# endregion
+		public PokemonType(
+			string name,
+			(int R, int G, int B) color
+		)
+		{
+			if (name != "")
+				this._name = name;
+			else throw new ArgumentException("Name must not be empty");
 
+			if (color.R >= 0 && color.R <= 255 &&
+				color.G >= 0 && color.G <= 255 &&
+				color.B >= 0 && color.B <= 255)
+				this._color = color;
+			else throw new ArgumentException("Color channels must be between 0-255");
+
+			_weaknesses[this] = new Dictionary<PokemonType, double>();
+		}
+		# endregion
 
 		# region Methods
 		public static double getWeakness(PokemonType attacker, PokemonType defender) => _weaknesses[attacker][defender];
