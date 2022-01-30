@@ -1,5 +1,6 @@
-﻿using Pokemons.Models.Pokemons;
-using Pokemons.Models.Types;
+﻿using Pokemons.Models;
+using Pokemons.Enums;
+using System.Reflection;
 
 namespace Pokemons
 {
@@ -7,10 +8,15 @@ namespace Pokemons
 	{
 		static void Main(String[] args)
 		{
-			var pika = new Pikachu(10);
-			Console.WriteLine(pika.ID);
-			Console.WriteLine(pika.Name);
-			// Console.WriteLine(TypeFire._weaknesses.Keys.ToList().Select(key => key.ToString()).Aggregate((a, b) => $"{a}, {b}"));
+			Random random = new Random();
+			Assembly.GetAssembly(typeof(Pokemon)).GetTypes()
+				.Where(type => type.IsClass && !type.IsAbstract && type.IsSubclassOf(typeof(Pokemon)))
+				.Select(type => (Pokemon)Activator.CreateInstance(type, new object[]{ random.Next(1, 100) })).ToList()
+				.Where(poke => poke.Species.Class == PokeClass.Baby)
+				.OrderBy(_ => random.Next())
+				.Take(10).ToList()
+				.ForEach(poke => Console.WriteLine($"{poke.PokedexEntry}\n"));
+			
 		}
 	}
 }
