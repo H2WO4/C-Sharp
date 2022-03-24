@@ -1,93 +1,153 @@
+#nullable disable
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using MVC.Models;
 
 namespace MVC.Controllers
 {
     public class MovieController : Controller
     {
-        // GET: Movie
-        public ActionResult Index()
+        private readonly MvcMovieContext _context;
+
+        public MovieController(MvcMovieContext context)
         {
-            return View();
+            _context = context;
+        }
+
+        // GET: Movie
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Movie.ToListAsync());
         }
 
         // GET: Movie/Details/5
-        public ActionResult Details(int id)
+        public async Task<IActionResult> Details(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var movie = await _context.Movie
+                .FirstOrDefaultAsync(m => m.ID == id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return View(movie);
         }
 
         // GET: Movie/Create
-        public ActionResult Create()
+        public IActionResult Create()
         {
             return View();
         }
 
         // POST: Movie/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Create([Bind("ID,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
-
+                _context.Add(movie);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(movie);
         }
 
         // GET: Movie/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var movie = await _context.Movie.FindAsync(id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+            return View(movie);
         }
 
         // POST: Movie/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
-            try
+            if (id != movie.ID)
             {
-                // TODO: Add update logic here
+                return NotFound();
+            }
 
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(movie);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!MovieExists(movie.ID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(movie);
         }
 
         // GET: Movie/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var movie = await _context.Movie
+                .FirstOrDefaultAsync(m => m.ID == id);
+            if (movie == null)
+            {
+                return NotFound();
+            }
+
+            return View(movie);
         }
 
         // POST: Movie/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            try
-            {
-                // TODO: Add delete logic here
+            var movie = await _context.Movie.FindAsync(id);
+            _context.Movie.Remove(movie);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+        private bool MovieExists(int id)
+        {
+            return _context.Movie.Any(e => e.ID == id);
         }
     }
 }
