@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿using PMU.Enums;
+using PMU.Enums;
 
 
 namespace PMU;
@@ -65,8 +64,3 @@ public static class Program
         }
     }
 }
-=======
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
