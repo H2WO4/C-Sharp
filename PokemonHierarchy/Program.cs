@@ -11,11 +11,15 @@ public static class Program
         var vaporeon   = new WaterPokemon("Vaporeon", 29, 3);
 
         charmander.Display();
+<<<<<<< HEAD
         charmander.Move(20);
         
         Console.WriteLine();
         
         vaporeon.Display();
         vaporeon.Move(20);
+=======
+        vaporeon.Display();
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     }
 }

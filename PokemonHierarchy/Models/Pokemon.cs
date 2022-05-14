@@ -3,11 +3,19 @@
 public abstract class Pokemon
 {
     #region Properties
+<<<<<<< HEAD
     private string Name { get; }
 
     protected double Weight { get; }
 
     protected abstract double Speed { get; }
+=======
+    public string Name { get; }
+    
+    public double Weight { get; }
+    
+    public abstract double Speed { get; }
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     #endregion
 
     #region Constructor
@@ -22,6 +30,7 @@ public abstract class Pokemon
     public virtual void Display()
     {
         Console.WriteLine($"My name is {Name}.");
+<<<<<<< HEAD
         Console.WriteLine($"I weigh {Weight}kg.");
     }
 
@@ -39,6 +48,9 @@ public abstract class Pokemon
 
                 break;
         }
+=======
+        Console.WriteLine($"I weigh {Weight}.");
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     }
     #endregion
 }

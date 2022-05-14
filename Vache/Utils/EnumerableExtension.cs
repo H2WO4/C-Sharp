@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Diagnostics.Contracts;
 
 
@@ -45,4 +46,11 @@ public static class EnumerableExtension
         // Return the very last element and the first one
         yield return (last, enumerator.Current);
     }
+=======
+﻿namespace Vache.Utils;
+
+public class EnumerableExtension
+{
+    
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 }

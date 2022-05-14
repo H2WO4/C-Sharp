@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Text.RegularExpressions;
 
 
@@ -31,4 +32,11 @@ public static class Consts
     /// </summary>
     public static readonly Regex PolygonRe = new($@"^(?:\({NUM_PATTERN}, ?{NUM_PATTERN}\)(?:, ?|$)){{3,}}$");
     #endregion
+=======
+﻿namespace Vache.Utils;
+
+public class Consts
+{
+    
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 }

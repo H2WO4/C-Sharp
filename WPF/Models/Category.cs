@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Collections.Generic;
 
 
@@ -28,4 +29,11 @@ public class Category
     public static Category GetCategory(string name)
         => AllCategories.Find(cat => cat.Name == name)!;
     #endregion
+=======
+﻿namespace WPF.Models;
+
+public class Category
+{
+    
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 }

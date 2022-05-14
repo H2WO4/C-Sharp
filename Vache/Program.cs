@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Diagnostics.CodeAnalysis;
 
 using Vache.Models;
@@ -23,3 +24,8 @@ public static class Program
                               : "The cow is outside of the field...");
     }
 }
+=======
+﻿// See https://aka.ms/new-console-template for more information
+
+Console.WriteLine("Hello, World!");
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237

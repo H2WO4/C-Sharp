@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+<<<<<<< HEAD
         mc:Ignorable="d"
         Title="Elemental" Height="400" Width="600"
         Initialized="Start">
@@ -34,3 +35,12 @@
                  Initialized="TextBox_Init" />
     </Grid>
 </Window>
+=======
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+    </Grid>
+</Window>
+>>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
