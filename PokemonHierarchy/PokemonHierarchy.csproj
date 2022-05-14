@@ -5,12 +5,9 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Benchmarking</RootNamespace>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <AssemblyName>PokemonHierarchy</AssemblyName>
+        <RootNamespace>PokemonHierarchy</RootNamespace>
+        <LangVersion>latestmajor</LangVersion>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
-    </ItemGroup>
 
 </Project>

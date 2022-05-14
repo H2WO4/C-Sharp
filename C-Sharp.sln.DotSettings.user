@@ -1,0 +1,20 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\arthu\AppData\Local\JetBrains\Rider2022.1\resharper-host\temp\Rider\vAny\CoverageData\_C-Sharp.1081866408\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c780523f_002D057a_002D4d68_002Da0e9_002Dd2d8942578f6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=2971579b_002Da125_002D4e75_002Dab9d_002D2881a8767ba5_0023WPF/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=33fa1872_002D41dc_002D4a5b_002Db910_002D4e490d1b70d7_0023Camion/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=a6eb7695_002D25ef_002D4600_002Db65d_002D7cfbf4d5af6e_0023PMU/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=aea55897_002Da107_002D425b_002Da86e_002D95094ff3648a_0023Cursed/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=e6808294_002D3076_002D4e03_002D826e_002Dd105720a7f2b_0023Benchmarking/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=eda8d1a2_002D3791_002D4dfe_002Da5e4_002D994877ae8bbc_0023PokemonHierarchy/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

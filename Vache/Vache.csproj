@@ -5,12 +5,13 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>Benchmarking</RootNamespace>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <StartupObject>Vache.Program</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+        <PackageReference Include="MSTest.TestAdapter" Version="2.2.7" />
+        <PackageReference Include="MSTest.TestFramework" Version="2.2.7" />
     </ItemGroup>
 
 </Project>

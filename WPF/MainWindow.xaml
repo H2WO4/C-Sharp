@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Elemental" Height="400" Width="600"
+        Initialized="Start">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+        
+        <ListBox Grid.Column="0" Grid.Row="0" Name="ListBox1"
+                 Loaded="ListBox1_Init"
+                 SelectionChanged="ListBox1_Select" />
+        <ListBox Grid.Column="1" Grid.Row="0" Name="ListBox2"
+                 Loaded="ListBox2_Init" />
+        <ListBox Grid.Column="3" Grid.Row="0" Name="ListBox3"
+                 Loaded="ListBox3_Init" />
+        <ListBox Grid.Column="4" Grid.Row="0" Name="ListBox4"
+                 Loaded="ListBox4_Init"
+                 SelectionChanged="ListBox4_Select" />
+        
+        <TextBox Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="1" Name="TextBox"
+                 Initialized="TextBox_Init" />
+    </Grid>
+</Window>
