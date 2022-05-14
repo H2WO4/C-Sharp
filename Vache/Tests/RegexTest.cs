@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Vache.Utils;
@@ -75,6 +74,3 @@ public class RegexTest
         Assert.IsFalse(Consts.NumberRe.IsMatch("e"));
     }
 }
-=======
-﻿
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237

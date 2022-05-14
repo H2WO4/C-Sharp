@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using Vache.Models;
@@ -145,11 +144,4 @@ public class PointTest
 
         Assert.IsTrue(pnt.GetHashCode() == res.GetHashCode());
     }
-=======
-﻿namespace Vache.Tests;
-
-public class PointTest
-{
-    
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 }

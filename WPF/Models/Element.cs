@@ -2,7 +2,6 @@
 
 public class Element
 {
-<<<<<<< HEAD
     #region Properties
     public string Name { get; }
 
@@ -19,7 +18,4 @@ public class Element
         category.Elements.Add(this);
     }
     #endregion
-=======
-    
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 }

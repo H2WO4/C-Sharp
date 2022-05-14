@@ -1,16 +1,11 @@
-<<<<<<< HEAD
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Diagnostics.Contracts;
 
 using Vache.Utils;
-=======
-﻿using Vache.Interfaces;
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 
 
 namespace Vache.Models;
 
-<<<<<<< HEAD
 public class Point2
 {
     #region Properties
@@ -22,28 +17,16 @@ public class Point2
     /// <summary>
     /// The coordinate on the Y axis
     /// </summary>
-=======
-public class GeneralPoint2 : I_Point2
-{
-    #region Properties
-    public double X { get; }
-
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     public double Y { get; }
     #endregion
 
     #region Constructor
-<<<<<<< HEAD
     public Point2(double x, double y)
-=======
-    public GeneralPoint2(double x, double y)
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     {
         X = x;
         Y = y;
     }
     #endregion
-<<<<<<< HEAD
 
     #region Methods
     /// <summary>
@@ -121,6 +104,4 @@ public class GeneralPoint2 : I_Point2
     public override int GetHashCode()
         => HashCode.Combine(X, Y);
     #endregion
-=======
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 }

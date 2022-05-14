@@ -1,24 +1,15 @@
-<<<<<<< HEAD
 ﻿using System.Diagnostics.CodeAnalysis;
 
 using Vache.Utils;
-=======
-﻿using Vache.Interfaces;
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 
 
 namespace Vache.Models;
 
-<<<<<<< HEAD
 public class Vector2
-=======
-public class GeneralVector2 : I_Vector2
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
 {
     #region Variables
     private double? _norm;
     #endregion
-<<<<<<< HEAD
 
     #region Properties
     /// <summary>
@@ -34,30 +25,16 @@ public class GeneralVector2 : I_Vector2
     /// <summary>
     /// The norm of the vector
     /// </summary>
-=======
-    
-    #region Properties
-    public double X { get; }
-
-    public double Y { get; }
-
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     public double Norm
         => _norm ??= GetNorm();
     #endregion
 
-<<<<<<< HEAD
     #region Constructors
     public Vector2(double x, double y)
-=======
-    #region Constructor
-    public GeneralVector2(double x, double y)
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     {
         X = x;
         Y = y;
     }
-<<<<<<< HEAD
 
     public Vector2(Point2 start, Point2 end)
     {
@@ -170,15 +147,5 @@ public class GeneralVector2 : I_Vector2
 
     public override int GetHashCode()
         => HashCode.Combine(X, Y);
-=======
-    #endregion
-
-    #region Methods
-    protected virtual double GetNorm()
-        => Math.Sqrt(X * X + Y * Y);
-
-    public double Scalar(I_Vector2 other)
-        => X * other.X + Y * other.Y;
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     #endregion
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-<<<<<<< HEAD
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -114,33 +113,5 @@ public partial class MainWindow
         foreach (Element element in category.Elements
                                             .OrderBy(elem => elem.Name))
             ListBox3.Items.Add(element.Name);
-=======
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-
-namespace WPF
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
->>>>>>> 72a638710efddbfb4bebd66286a95c8274f89237
     }
 }
